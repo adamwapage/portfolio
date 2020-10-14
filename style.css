@@ -16,6 +16,7 @@
   width: 100%;
   padding: 30px 0;
   position: fixed;
+  z-index: 999;
   font-family: 'Ubuntu', sans-serif;
   transition: all 0.5s ease;
 }
@@ -114,7 +115,7 @@
   color: #fff;
   font-size: 25px;
   padding: 12px 35px;
-  margin-top: 15px;
+  margin-top: 20px;
   border-radius: 4px;
   border: solid crimson 2px;
   transition: all 0.3s ease;
@@ -124,10 +125,92 @@
   background: none;
 }
 
+/* About */
+
+section {
+  padding: 100px 0;
+}
+
+.about {
+  font-family: 'Poppins', sans-serif;
+}
+
+.about .title {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-content .left {
+  width: 45%;
+}
+
+.about .about-content .left img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.about .about-content .right {
+  width: 55%;
+}
+
+.about .about-content .right .text {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about .about-content .right .text span {
+  color: crimson;
+}
+
+.about .about-content .right p {
+  text-align: justify;
+}
+
+.about .about-content .right a {
+  display: inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: solid crimson 2px;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+  color: crimson;
+  background: none;
+}
+
 /* Media Queries */
+
+@media (max-width: 1100px) {
+  .about .about-content .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
 @media (max-width: 991px) {
   .wrapper {
     padding: 0 60px;
+    max-width: 800px;
   }
 
   .menu-btn {
@@ -172,6 +255,31 @@
   .home .home-content .text-3 {
     font-size: 35px;
   }
+
+  .home .home-content a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+
+  .about .about-content .column {
+    width: 100%;
+  }
+
+  .about .about-content .left img{
+    height: 300px;
+    width: 300px;
+  }
+
+  .about .about-content .left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+
+  .about .about-content .right {
+    flex: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 690px) {
@@ -181,6 +289,11 @@
 
   .home .home-content .text-3 {
     font-size: 32px;
+  }
+
+  .home .home-content a {
+    font-size: 20px;
+    padding: 9px 25px;
   }
 }
 
