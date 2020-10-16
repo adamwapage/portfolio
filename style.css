@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -198,6 +199,14 @@ section {
   background: none;
 }
 
+/* Projects */
+
+.projects {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
 /* Media Queries */
 
 @media (max-width: 1100px) {
@@ -244,8 +253,17 @@ section {
 
   .navbar .menu li a {
     display: inline-block;
-    margin: 20px 0;
+    margin: 50px 0;
     font-size: 25px;
+    color: #fff;
+  }
+
+  .navbar .menu li a:hover {
+    color: crimson;
+  }
+
+  .navbar.sticky .menu li a:hover {
+    color: crimson;
   }
 
   .home .home-content .text-2 {
@@ -266,8 +284,8 @@ section {
   }
 
   .about .about-content .left img{
-    height: 300px;
-    width: 300px;
+    height: 320px;
+    width: 320px;
   }
 
   .about .about-content .left {
