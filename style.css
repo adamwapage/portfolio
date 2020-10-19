@@ -203,14 +203,69 @@ section {
 
 .projects {
   font-family: 'Poppins', sans-serif;
+  background: black;
 }
 
+.projects .title {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+/* Contact */
+.contact {
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact .title {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+}
+
+.contact .form {
+  width: 100%;
+  text-align: center;
+}
+
+.contact .field input {
+  padding: 7px 30px;
+  margin: 10px;
+}
+
+.contact .field textarea {
+  margin: 10px;
+}
+
+.contact .button button {
+  background: crimson;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: solid crimson 2px;
+  transition: all 0.3s ease;
+}
+
+.contact .button button:hover {
+  color: crimson;
+  background: none;
+}
 
 
 /* Media Queries */
 
 @media (max-width: 1100px) {
-  .about .about-content .left img{
+  .about .about-content .left img {
     height: 350px;
     width: 350px;
   }
@@ -283,7 +338,7 @@ section {
     width: 100%;
   }
 
-  .about .about-content .left img{
+  .about .about-content .left img {
     height: 320px;
     width: 320px;
   }
