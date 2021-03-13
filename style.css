@@ -87,8 +87,8 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
-.home .wrapper {
-  /* margin: auto 0 auto 30px;  */
+.home .home-content {
+  min-width: 450px;
 }
 
 .home .home-content .text-1 {
